@@ -1,0 +1,40 @@
+body {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-size: 100vw 100vh;
+    font-family: Georgia;
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .menu {
+    background-color: #a0c4ff;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .site-title {
+    text-align: center;
+    color: #086788;
+  }
+  .site-subtitle {
+    text-align: center;
+    color: #ff206e;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu li {
+    list-style: none;
+  }
+  
