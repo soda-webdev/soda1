@@ -1,40 +1,140 @@
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-    background-size: 100vw 100vh;
-    font-family: Georgia;
-  }
-  html {
-    height: 100%;
-  }
-  body {
-    height: 100%;
-    margin: 0;
+    background-size: auto 100vh; 
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    height: 100vh;
+    margin: 0;
+
   }
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .menu {
     background-color: #a0c4ff;
+    position: fixed;
+    width: 100vw ;
+    top: 0;
   }
+
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu a{
+
+    display: block;
+    padding: 10px 20px;
+    
+  }
+
   a {
+    
     text-decoration: none;
+    color:#2F4F4F;
   }
   
   a:hover {
     text-decoration: underline;
   }
+
   .site-title {
     text-align: center;
     color: #086788;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2em;
   }
+
   .site-subtitle {
     text-align: center;
     color: #ff206e;
+    font-family: 'Varela Round', sans-serif;
   }
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
+
+  .contato,
+  .projetos{
+    padding: 2em;
+    min-height: 100vh;
   }
-  .menu li {
-    list-style: none;
+
+  .contato, h2
+  .projetos h2 {
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 1.5em;
+    font-size: 2em;
   }
-  
+
+.projetos.grid{
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+
+.projetos figure{
+  text-align: center;
+}
+
+  .img-portfolio {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  background-image: linear-gradient(220deg, #fd21f2, #296279 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 4px;
+}
+.contato a {
+font-size: 10em;  
+}
